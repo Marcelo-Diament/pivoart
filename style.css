@@ -1,0 +1,93 @@
+:root {
+  --azul: rgb(0, 119, 255);
+  --branco: rgb(255, 255, 255);
+  --cinza-claro: rgb(241, 241, 241);
+  --cinza-escuro: rgb(33, 33, 33);
+  --preto: rgb(0, 0, 0)
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand h1 {
+  display: inline;
+  font-size: inherit;
+}
+
+main {
+  margin-top: 56px;
+  min-height: calc(100vh - 56px);
+}
+
+#bannerTopo .carousel-item {
+  background-color: var(--azul);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 56px);
+}
+
+#bannerTopo .carousel-item:nth-child(1) {
+  background-image: url('https://images0.westend61.de/0001280887pw/prayer-book-kippah-and-shofar-horn-jewish-religious-symbol-CAVF67404.jpg');
+}
+
+#bannerTopo .carousel-item:nth-child(2) {
+  background-image: url('https://jewishjournal.com/wp-content/uploads/2018/05/anal-jerusalem.jpg');
+}
+
+#bannerTopo .carousel-item:nth-child(3) {
+  background-image: url('https://www.myjewishlearning.com/wp-content/uploads/2016/03/passover-seder1-1598x900.jpg');
+}
+
+#bannerTopo .carousel-item .carousel-caption {
+  top: 16%;
+}
+
+#bannerTopo .carousel-item .carousel-caption h2 {
+  font-size: 48px;
+  margin-bottom: 96px;
+  min-height: 114px;
+}
+
+#bannerTopo .carousel-item .carousel-caption h3 {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 576px) {
+  #bannerTopo .carousel-item .carousel-caption {
+    top: 24%;
+  }
+
+  #bannerTopo .carousel-item .carousel-caption h2 {
+    font-size: 64px;
+    margin-bottom: 160px;
+    min-height: 152px;
+  }
+
+  #bannerTopo .carousel-item .carousel-caption h3 {
+    font-size: 32px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  #bannerTopo .carousel-item {
+    min-height: 66vh;
+  }
+
+  #bannerTopo .carousel-item .carousel-caption h2 {
+    margin-bottom: 120px;
+    min-height: 96px;
+  }
+}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1400px) {}
