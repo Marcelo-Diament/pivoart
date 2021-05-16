@@ -24,7 +24,7 @@
   <meta name="identifier-URL" content="https://marcelo-diament.github.io/pivoart">
   <meta name="url" content="https://marcelo-diament.github.io/pivoart">
   <meta property="og:url" content="https://marcelo-diament.github.io/pivoart">
-  <link rel="canonical" href="https://marcelo-diament.github.io/pivoart/">
+  <link rel="canonical" href="https://marcelo-diament.github.io/pivoart">
   <!-- /Cache -->
 
   <!-- Indexação -->
@@ -123,8 +123,8 @@
   <!-- /Dados para mobile app -->
 
   <!-- Estilos -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="prerender" href="style.css">
+  <link rel="preload" href="style.min.css" as="style">
+  <link rel="prerender" href="style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" as="style" href="https://pro.fontawesome.com/releases/v5.15.3/css/brands.css" integrity="sha384-GTxp/8UKFkexlguDtPsFi90d++F9f26nZCM99OSQo69514FK7Of5mgM9Efhs5O9L" crossorigin="anonymous">
   <link rel="preload" as="style" href="https://pro.fontawesome.com/releases/v5.15.3/css/fontawesome.css" integrity="sha384-DHjwMcq12OEB4DQ+qulZDDroaXZqm7h9V6AjiP/RuUF8NhxUa8x6UWdv1AeZS+90" crossorigin="anonymous">
@@ -132,7 +132,10 @@
   <link async defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link async defer rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/brands.css" integrity="sha384-GTxp/8UKFkexlguDtPsFi90d++F9f26nZCM99OSQo69514FK7Of5mgM9Efhs5O9L" crossorigin="anonymous">
   <link async defer rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/fontawesome.css" integrity="sha384-DHjwMcq12OEB4DQ+qulZDDroaXZqm7h9V6AjiP/RuUF8NhxUa8x6UWdv1AeZS+90" crossorigin="anonymous">
-  <link async defer rel="stylesheet" href="style.css">
+  <link async defer rel="stylesheet" href="style.min.css">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}section:not(#bannerTopo){margin:0;max-width:100vw;padding:80px 32px}section:not(#bannerTopo):not(.vitrine) h2{text-decoration-color:var(--secondary)}h2{font-family:Satisfy,cursive}.navbar-brand h1{display:inline;font-size:inherit}.david-star-symbol{display:none}main{margin-top:56px;min-height:calc(100vh - 56px)}#bannerTopo .carousel-item{background-color:#219ebc;background-blend-mode:soft-light;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;min-height:calc(100vh - 56px)}#bannerTopo .carousel-item:nth-child(1){background-image:url(img/artigos-judaicos-pivo-art.webp),url(img/artigos-judaicos-pivo-art.png)}#bannerTopo .carousel-item:nth-child(2){background-image:url(img/decoracao-judaica-pivo-art.webp),url(img/decoracao-judaica-pivo-art.png)}#bannerTopo .carousel-item:nth-child(3){background-image:url(img/artigos-festas-judaicas-pivo-art.webp),url(img/artigos-festas-judaicas-pivo-art.png)}#bannerTopo .carousel-item .carousel-caption{top:16%}#bannerTopo .carousel-item .carousel-caption h2{font-size:56px;margin-bottom:96px;min-height:114px}#bannerTopo .carousel-item .carousel-caption h3{font-size:24px}@media only screen and (min-width:576px){#bannerTopo .carousel-item .carousel-caption{top:24%}#bannerTopo .carousel-item .carousel-caption h2{font-size:64px;margin-bottom:160px;min-height:152px}#bannerTopo .carousel-item .carousel-caption h3{font-size:32px}}@media only screen and (min-width:768px){.david-star-symbol{color:#219ebc;display:inline;font-family:cursive;font-size:20px;vertical-align:text-top}#bannerTopo .carousel-item{min-height:66vh}#bannerTopo .carousel-item .carousel-caption h2{margin-bottom:120px;min-height:96px}}
+  </style>
   <!-- /Estilos -->
 
   <!-- Favicons -->
@@ -243,7 +246,7 @@
         <p>O atelier Pivo Art busca resgatar e preservar nossas <strong>raízes judaicas</strong> através da <strong>arte e decoração</strong>. Produzimos <strong>peças artesanais</strong> com inspiração em nossa vivência em <strong>Israel</strong>. Também produzimos <strong>peças customizadas e personalizadas sob medida</strong>.</p>
       </article>
       <div id="estrelaDeDavid" class="col-12 col-md-5 offset-md-1 order-1 order-md-2 d-md-inline-block">
-        <img src="img/estrela-de-david.jpg" alt="Estrela de David" height="160" width="auto" class="d-block mx-auto" height="auto" width="auto">
+        <img src="img/estrela-de-david.jpg" alt="Estrela de David" height="160" width="160" class="d-block mx-auto">
       </div>
     </section>
     <section id="bencao" class="vitrine">
@@ -252,16 +255,40 @@
         <div class="carousel slide col-8 offset-2 col-md-3 offset-md-0" data-bs-ride="carousel">
           <div class="carousel-inner">
             <article class="carousel-item active">
-              <img src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção da Casa Vermelha" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Preta" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-shema-israel-branca-01-pivo-art.png" class="card-img-top" alt="Shema Israel" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Branca" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.webp 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.webp 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.webp 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.webp 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.webp 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.webp 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.png 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.png 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.png 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.png 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.png 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.png 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-shema-israel-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
           </div>
         </div>
@@ -277,16 +304,40 @@
         <div class="carousel slide col-8 offset-2 col-md-3 offset-md-1" data-bs-ride="carousel">
           <div class="carousel-inner">
             <article class="carousel-item active">
-              <img src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção da Casa Vermelha" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Preta" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-shema-israel-branca-01-pivo-art.png" class="card-img-top" alt="Shema Israel" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Branca" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.webp 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.webp 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.webp 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.webp 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.webp 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.webp 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.png 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.png 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.png 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.png 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.png 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.png 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-shema-israel-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
           </div>
         </div>
@@ -302,16 +353,40 @@
         <div class="carousel slide col-8 offset-2 col-md-3 offset-md-0" data-bs-ride="carousel">
           <div class="carousel-inner">
             <article class="carousel-item active">
-              <img src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção da Casa Vermelha" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Preta" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-shema-israel-branca-01-pivo-art.png" class="card-img-top" alt="Shema Israel" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Branca" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.webp 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.webp 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.webp 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.webp 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.webp 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.webp 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.png 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.png 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.png 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.png 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.png 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.png 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-shema-israel-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
           </div>
         </div>
@@ -327,16 +402,40 @@
         <div class="carousel slide col-8 offset-2 col-md-3 offset-md-1" data-bs-ride="carousel">
           <div class="carousel-inner">
             <article class="carousel-item active">
-              <img src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção da Casa Vermelha" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Preta" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-shema-israel-branca-01-pivo-art.png" class="card-img-top" alt="Shema Israel" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Branca" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.webp 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.webp 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.webp 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.webp 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.webp 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.webp 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.png 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.png 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.png 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.png 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.png 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.png 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-shema-israel-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
           </div>
         </div>
@@ -352,16 +451,40 @@
         <div class="carousel slide col-8 offset-2 col-md-3 offset-md-0" data-bs-ride="carousel">
           <div class="carousel-inner">
             <article class="carousel-item active">
-              <img src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção da Casa Vermelha" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.webp 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.webp 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.webp 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.webp 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.webp 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.webp 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-casa-vermelha-01-pivo-art-140.png 140w,img/hamsa-bencao-casa-vermelha-01-pivo-art-146.png 146w,img/hamsa-bencao-casa-vermelha-01-pivo-art-195.png 195w,img/hamsa-bencao-casa-vermelha-01-pivo-art-247.png 247w,img/hamsa-bencao-casa-vermelha-01-pivo-art-260.png 260w,img/hamsa-bencao-casa-vermelha-01-pivo-art-302.png 302w,img/hamsa-bencao-casa-vermelha-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-casa-vermelha-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Preta" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-branca-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-branca-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-branca-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-branca-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-branca-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-branca-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-shema-israel-branca-01-pivo-art.png" class="card-img-top" alt="Shema Israel" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.webp 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.webp 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.webp 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.webp 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.webp 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.webp 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-bencao-trabalho-preta-01-pivo-art-140.png 140w,img/hamsa-bencao-trabalho-preta-01-pivo-art-146.png 146w,img/hamsa-bencao-trabalho-preta-01-pivo-art-195.png 195w,img/hamsa-bencao-trabalho-preta-01-pivo-art-247.png 247w,img/hamsa-bencao-trabalho-preta-01-pivo-art-260.png 260w,img/hamsa-bencao-trabalho-preta-01-pivo-art-302.png 302w,img/hamsa-bencao-trabalho-preta-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-bencao-trabalho-preta-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
             <article class="carousel-item">
-              <img src="img/hamsa-bencao-trabalho-branca-01-pivo-art.png" class="card-img-top" alt="Hamsa Benção do Trabalho Branca" height="auto" width="auto">
+              <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.webp 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.webp 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.webp 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.webp 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.webp 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.webp 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.webp 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <source srcset="img/hamsa-shema-israel-branca-01-pivo-art-140.png 140w,img/hamsa-shema-israel-branca-01-pivo-art-146.png 146w,img/hamsa-shema-israel-branca-01-pivo-art-195.png 195w,img/hamsa-shema-israel-branca-01-pivo-art-247.png 247w,img/hamsa-shema-israel-branca-01-pivo-art-260.png 260w,img/hamsa-shema-israel-branca-01-pivo-art-302.png 302w,img/hamsa-shema-israel-branca-01-pivo-art-329.png 329w" sizes="(min-width: 1400px) 25vw, 302px, (min-width: 1200px) 25vw, 247px, (min-width: 992px) 25vw, 195px, (min-width: 768px) 25vw, 140px, (min-width: 576px) 66vw, 329px, (min-width: 480px) 66vw, 260px, (min-width: 300px) 66vw, 146px">
+                <img class="card-img-top" src="img/hamsa-shema-israel-branca-01-pivo-art.png" width="192" height="auto" alt="Hamsa Benção da Casa Vermelha">
+                <!--[if IE 9]></video><![endif]-->
+              </picture>
             </article>
           </div>
         </div>
