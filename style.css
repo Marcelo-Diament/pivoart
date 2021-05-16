@@ -1,5 +1,7 @@
 :root {
   --azul: rgb(0, 119, 255);
+  --azul-claro: rgba(0, 119, 255, 0.3);
+  --azul-escuro: rgb(39, 87, 142);
   --branco: rgb(255, 255, 255);
   --cinza-claro: rgb(241, 241, 241);
   --cinza-escuro: rgb(33, 33, 33);
@@ -12,9 +14,40 @@
   padding: 0;
 }
 
+section:not(#bannerTopo) {
+  margin: 0;
+  max-width: 100vw;
+  padding: 32px;
+}
+
+section:not(#bannerTopo) h2 {
+  color: var(--azul-escuro);
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+.btn-primary {
+  background-color: var(--azul-escuro);
+  border-color: var(--azul-escuro);
+}
+
 .navbar-brand h1 {
   display: inline;
   font-size: inherit;
+}
+
+.david-star-symbol {
+  color: var(--azul);
+  font-family: cursive;
+  font-size: 20px;
+  vertical-align: text-top;
 }
 
 main {
@@ -33,15 +66,15 @@ main {
 }
 
 #bannerTopo .carousel-item:nth-child(1) {
-  background-image: url('https://images0.westend61.de/0001280887pw/prayer-book-kippah-and-shofar-horn-jewish-religious-symbol-CAVF67404.jpg');
+  background-image: url('img/artigos-judaicos-pivo-art.png');
 }
 
 #bannerTopo .carousel-item:nth-child(2) {
-  background-image: url('https://jewishjournal.com/wp-content/uploads/2018/05/anal-jerusalem.jpg');
+  background-image: url('img/decoracao-judaica-pivo-art.png');
 }
 
 #bannerTopo .carousel-item:nth-child(3) {
-  background-image: url('https://www.myjewishlearning.com/wp-content/uploads/2016/03/passover-seder1-1598x900.jpg');
+  background-image: url('img/artigos-festas-judaicas-pivo-art.png');
 }
 
 #bannerTopo .carousel-item .carousel-caption {
@@ -56,6 +89,42 @@ main {
 
 #bannerTopo .carousel-item .carousel-caption h3 {
   font-size: 24px;
+}
+
+.vitrine {
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitrine:nth-child(odd) {
+  background-color: var(--cinza-claro);
+}
+
+.vitrine:nth-child(even) {
+  background-color: var(--azul-claro);
+}
+
+#bencao {
+  background-image: url('img/shema-israel-bg-pivo-art.jpg');
+}
+
+#shabat {
+  background-image: url('img/shabat-bg-pivo-art.png');
+}
+
+#kabbalah {
+  background-image: url('img/arvore-da-vida-pivo-art.png');
+}
+
+#decoracao {
+  background-image: url('img/decoracao-judaica-bg-pivo-art.png');
+}
+
+#festa {
+  background-image: url('img/decoracao-festa-judaica-bg-pivo-art.png');
 }
 
 @media only screen and (min-width: 576px) {
@@ -84,10 +153,22 @@ main {
     margin-bottom: 120px;
     min-height: 96px;
   }
+
+  section:not(#bannerTopo) {
+    padding: 64px;
+  }
+
+  .vitrine:nth-child(even) .vitrine__content {
+    flex-direction: row-reverse;
+  }
 }
 
 @media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  p {
+    font-size: 24px;
+  }
+}
 
 @media only screen and (min-width: 1400px) {}
