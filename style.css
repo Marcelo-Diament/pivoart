@@ -44,9 +44,10 @@ strong {
 }
 
 .david-star-symbol {
+  /* display: none; */
   color: var(--azul);
   font-family: cursive;
-  font-size: 20px;
+  font-size: 12px;
   vertical-align: text-top;
 }
 
@@ -145,6 +146,10 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  .david-star-symbol {
+    font-size: 20px;
+  }
+
   #bannerTopo .carousel-item {
     min-height: 66vh;
   }
