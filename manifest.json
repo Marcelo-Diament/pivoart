@@ -1,0 +1,32 @@
+{
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "name": "Decoração Judaica PivoArt",
+  "description": "Decoração Judaica PivoArt | Artigos de Decoração Judaica inspirados em Israel.",
+  "short_name": "PivoArt",
+  "start_url": "https://marcelo-diament.github.io/pivoart/",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "mime_type": "application/manifest+json",
+  "background_color": "#c3e6f6",
+  "theme_color": "#219ebc",
+  "display": "standalone",
+  "scope": "https://marcelo-diament.github.io/pivoart/",
+  "icons": [
+    {
+      "src": "./favicons/favicon-196.png",
+      "sizes": "196x196",
+      "type": "img/png"
+    },
+    {
+      "src": "./favicons/favicon-228x228.png",
+      "sizes": "228x228",
+      "type": "img/png"
+    },
+    {
+      "src": "./favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "img/png"
+    }
+  ]
+}

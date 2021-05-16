@@ -4,8 +4,11 @@
   --primary-light-bg: #c3e6f6;
   --primary-dark: #023047;
   --secondary: #ffb703;
+  --secondary-light: #ffd66e;
+  --secondary-light-bg: #ffeab5;
   --secondary-dark: #fb8500;
   --neutral-light: #f3f3f3;
+  --neutral: #ccc;
   --neutral-dark: #333;
 }
 
@@ -18,7 +21,7 @@
 section:not(#bannerTopo) {
   margin: 0;
   max-width: 100vw;
-  padding: 56px 32px;
+  padding: 80px 32px;
 }
 
 h2 {
@@ -29,6 +32,13 @@ section:not(#bannerTopo) h2 {
   color: var(--primary-dark);
   font-size: 40px;
   margin-bottom: 24px;
+  text-underline-position: from-font;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+section:not(#bannerTopo):not(.vitrine) h2 {
+  text-decoration-color: var(--secondary);
 }
 
 p {
@@ -42,6 +52,21 @@ strong {
 .btn-primary {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
 }
 
 .navbar-brand h1 {
@@ -102,12 +127,24 @@ main {
   background-size: auto;
 }
 
+section.vitrine h2 {
+  text-align: center;
+}
+
 .vitrine:nth-child(odd) {
   background-color: var(--neutral-light);
 }
 
+section.vitrine:nth-child(odd) h2 {
+  text-decoration-color: var(--secondary) !important;
+}
+
 .vitrine:nth-child(even) {
   background-color: var(--primary-light-bg);
+}
+
+section.vitrine:nth-child(even) h2 {
+  text-decoration-color: var(--primary) !important;
 }
 
 #bencao {
