@@ -97,6 +97,16 @@ section.vitrine:nth-child(even) h2 {
   background-image: url('img/festas-pattern-bg.webp'), url('img/festas-pattern-bg.jpg');
 }
 
+#contato h3 {
+  color: var(--primary-dark);
+}
+
+#contato ul li.nav-item,
+#contato ul li.nav-item a.nav-link {
+  color: var(--neutral-dark);
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 768px) {
   section:not(#bannerTopo) {
     padding: 64px;
