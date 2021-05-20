@@ -7,11 +7,19 @@
 section:not(#bannerTopo) {
   margin: 0;
   max-width: 100vw;
-  padding: 80px 32px;
+  overflow: hidden;
+  padding: 80px 40px;
+  position: relative;
+}
+
+section h2.vitrine__title,
+section article.vitrine__content div {
+  z-index: 2;
+  position: inherit;
 }
 
 section:not(#bannerTopo):not(.vitrine) h2 {
-  text-decoration-color: var(--secondary);
+  text-decoration-color: #ffb703;
 }
 
 h2 {
