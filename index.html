@@ -3,10 +3,16 @@
       const make64Svg = () => {
         let w = window.innerWidth,
           isMobile = w < 768,
-          h = isMobile ? window.innerHeight : window.innerHeight * 0.65,
+          h = document.querySelector('.vitrine').offsetHeight,
           x = w * 0.3,
-          y = h * 0.3,
-          evenXY = isMobile ? `0,0 ${w-200},0 ${w},200 ${w},${h} 0,${h}` : `0,0 ${w-x},0 ${w},${h} 0,${h}`,
+          y = h * 0.3
+
+        document.querySelectorAll('.vitrine').forEach(vitrine => {
+          h = vitrine.offsetHeight > y ? vitrine.offsetHeight : y
+          return h
+        })
+
+        let evenXY = isMobile ? `0,0 ${w-200},0 ${w},200 ${w},${h} 0,${h}` : `0,0 ${w-x},0 ${w},${h} 0,${h}`,
           oddXY = isMobile ? `200,0 ${w},0 ${w},${h} 0,${h} 0,200` : `${x},0 ${w},0 ${w},${h} 0,${h}`,
           evenBg = btoa(`<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"${w}px\" height=\"${h}px\" viewBox=\"0 0 ${w} ${h}\" enable-background=\"new 0 0 ${w} ${h}\" xml:space=\"preserve\">\r\n<polygon fill=\"#8ECAE6\" points=\"${evenXY}\"/>\r\n</svg>\r\n`),
           oddBg = btoa(`<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"${w}px\" height=\"${h}px\" viewBox=\"0 0 ${w} ${h}\" enable-background=\"new 0 0 ${w} ${h}\" xml:space=\"preserve\">\r\n<polygon fill=\"#F3F3F3\" points=\"${oddXY}\"/>\r\n</svg>\r\n`)
